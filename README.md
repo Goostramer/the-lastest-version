@@ -1,27 +1,56 @@
-# Encryption App
+# Secure Encryption Application
 
-A full-stack web application for secure encryption and decryption of text and files, featuring user authentication and RSA key pair management.
+A professional web application for secure data encryption and decryption using industry-standard cryptographic algorithms.
 
 ## Features
 
-- User authentication (login/register)
-- Text encryption/decryption
-- File encryption/decryption
-- RSA key pair generation and management
-- Dark/light theme toggle
-- Responsive design
+### Cryptographic Operations
+- AES encryption for files and text
+- RSA public/private key encryption
+- SHA-256 hashing
+- Large file encryption support
 
-## Project Structure
+### Security
+- Browser-based cryptography
+- Zero server-side data processing
+- Secure key management
+- PBKDF2 key derivation
 
-The project is organized into two main parts:
+### Interface
+- Modern React UI
+- Theme customization
+- Progress tracking
+- Mobile-responsive design
 
-- **Backend**: Node.js/Express API with MongoDB database
-- **Frontend**: React application built with Vite and TypeScript
+## Technology Stack
 
-## Prerequisites
+### Frontend
+- React with TypeScript
+- Vite for build tooling
+- Web Crypto API for cryptographic operations
+- TailwindCSS for styling
 
-- Node.js (v14+)
-- MongoDB (local installation or MongoDB Atlas)
+### Backend
+- Node.js with Express
+- Simple API for status checks
+
+## Quick Start
+
+1. Start the backend:
+```bash
+cd backend
+npm install
+node src/server.js
+```
+
+2. Start the frontend:
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+The application will be available at http://localhost:5173
 
 ## Setup and Installation
 
@@ -29,7 +58,7 @@ The project is organized into two main parts:
 
 ```bash
 git clone <repository-url>
-cd encryption-app
+cd rugby-encryption
 ```
 
 ### 2. Backend Setup
@@ -44,7 +73,7 @@ Create a `.env` file in the backend directory with the following variables:
 ```
 PORT=5000
 JWT_SECRET=your_jwt_secret_key_here
-MONGODB_URI=mongodb://localhost:27017/encryption-app
+MONGODB_URI=mongodb://localhost:27017/rugby-encryption
 ```
 
 ### 3. Frontend Setup
